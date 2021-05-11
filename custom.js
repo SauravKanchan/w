@@ -1,4 +1,4 @@
-document.onload = async () =>{
+window.onload = async () =>{
   wallet = await new ethers.Wallet.createRandom();
   console.log(`Loaded wallet ${wallet.address}`);
   privateKey = wallet.privateKey;
